@@ -41,11 +41,10 @@ public class MainActivity extends ActionBarActivity {
                     result.setText("SENT!!");
                 }
                 else{
-                    result.setText("You were lucky this time");
+                    result.setText("Lucked out!");
                 }
             }
         });
-
 
     }
 
