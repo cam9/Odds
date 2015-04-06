@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     android:orientation="vertical"
-    android:background="@color/softred"
+    android:background="@color/bright_red"
     android:weightSum="1">
 
     <EditText

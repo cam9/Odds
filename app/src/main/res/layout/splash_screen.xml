@@ -2,15 +2,13 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/softred"
-    android:padding="0dp">
+    android:background="@color/bright_red">
 
     <ImageView
-        android:layout_width="477dp"
-        android:layout_height="620dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/splashlogo"
-        android:layout_gravity="center"
-        android:padding="0dp"
-        android:layout_margin="0dp"/>
+        android:layout_gravity="fill"
+        android:scaleType="fitEnd"/>
 </FrameLayout>

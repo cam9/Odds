@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="softred">#FF0016</color>
+    <color name="bright_red">#FF0027</color>
+    <color name="dark_red">#C4062A</color>
+
 </resources>
