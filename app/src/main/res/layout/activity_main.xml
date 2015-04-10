@@ -7,19 +7,41 @@
     android:background="@color/bright_red"
     android:weightSum="1">
 
-    <EditText
-        android:id="@+id/phone"
-        android:inputType="number"
-
-        android:background="@drawable/input"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:layout_margin="5dp"
-        android:padding="10sp"
-        android:maxLength="10"
-        android:hint="To" />
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/phone"
+            android:inputType="number"
+
+            android:background="@drawable/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:padding="10sp"
+            android:maxLength="10"
+            android:hint="To" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Browse..."
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
 
 
     <EditText
@@ -27,13 +49,15 @@
 
         android:background="@drawable/input"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:gravity="center"
+        android:layout_height="0dp"
+        android:windowSoftInputMode="adjustNothing"
+        android:textSize="20sp"
+        android:gravity="top"
         android:layout_margin="5dp"
         android:padding="10sp"
         android:maxLength="140"
-        android:hint="Message" />
+        android:hint="Message"
+        android:layout_weight="0.6" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -43,9 +67,8 @@
 
         <EditText
             android:id="@+id/percent"
-            android:inputType="number"
+            android:inputType="none"
             android:maxLength="2"
-
             android:background="@drawable/input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +76,7 @@
             android:layout_margin="5dp"
             android:gravity="center"
             android:textSize="30sp"
-            android:text="90"
+            android:text="0"
             android:hint="50"/>
 
         <TextView
@@ -66,6 +89,11 @@
 
 
     </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/seekBar" />
 
 
     <Button
